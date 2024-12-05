@@ -20,7 +20,7 @@ n = int(input("Numero de  contactos ha agregar "))
 for _ in range(n):
     Nombre = input ("Escribe el nombre del contacto: ")
     Correo = input (f"Escribe el correo de {Nombre}: ")
-    Contactos{Nombre} = Correo
+    Contactos[Nombre] = Correo
 
 # Ver claves y diccionario
 print ("\nInformacion de contacto: ")
@@ -36,7 +36,7 @@ def Agregar_Estudiante(Estudiantes):
 def Agregar_o_Actualizar_Contaacto(Contactos):
     Nombre = input("Escribe el nonbre del contacto: ")
     Correo = input (f"Escribe el correo de {Nombre}: ")
-    Contactos{Nombre} = Correo
+    Contactos[Nombre] = Correo
 
 # Escoger menu
 def Menu():
