@@ -65,6 +65,3 @@ while not Adivinado:
     except ValueError:
         print ("Por favor, introduce un numero valido.")
 
-# Ejecutar el juego
-if_name_ == "_main_":
-    Juego_Adivinanza()
