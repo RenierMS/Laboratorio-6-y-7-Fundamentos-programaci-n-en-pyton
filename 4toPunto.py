@@ -35,4 +35,36 @@ while True:
     except ValueError:
         print ("Entrada no valida. Favor ingresa un numero")
 
+
 # Crear un juego de adivinanza donde el programa genere un número aleatorio y el usuario deba adivinarlo, recibiendo pistas de "mayor" o "menor" en cada intento.
+import randon
+
+def Juego_Adivinanza():
+    print ("Bienvenid@ al juego")
+    print ("Tengo un numero del 1 al 100. ¿Puedes adivinarlo?")
+
+# numero aleatorio del 1 al 100
+Numero_Secreto = randon.randint(1, 100)
+Intentos = 0
+Adivinado = False
+
+while not Adivinado:
+    try:
+        # Introducir el numero
+        Intento = int(input("Cual es tu numero: "))
+        Intentos += 1
+
+        if Intento < Numero_Secreto:
+            print ("El numero es mayor. Sigue intentando")
+        elif Intento > Numero_Secreto:
+            print ("El numero es menor. Sigue intentando")
+        else:
+            print (f"Felicidades Has adivinado el numero {Numero_Secreto} en {Intentos} intentos.")
+
+            Adivinado = True
+    except ValueError:
+        print ("Por favor, introduce un numero valido.")
+
+# Ejecutar el juego
+if__name__ == "__main__":
+    Juego_Adivinanza()
