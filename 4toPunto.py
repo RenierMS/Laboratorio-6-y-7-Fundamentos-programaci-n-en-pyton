@@ -66,5 +66,5 @@ while not Adivinado:
         print ("Por favor, introduce un numero valido.")
 
 # Ejecutar el juego
-if__name__ == "__main__":
+if_name_ == "_main_":
     Juego_Adivinanza()
